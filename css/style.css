@@ -4,9 +4,7 @@ sans-serif;
 font-family: 'Saira Condensed',
 sans-serif;
 */
-
 /* color #00CC9A */
-
 * {
     margin: 0;
     padding: 0;
@@ -84,18 +82,27 @@ header button {
     border: 2px solid white;
 }
 
+header button p {
+    font-size: 12px;
+    padding-right: 10px;
+    display: inline;
+}
+
 @media (orientation: portrait) and (min-width: 360px) {
     header h1 {
         font-size: 24px;
     }
+
     header h2 {
         font-size: 24px;
     }
+
     header button {
         margin-top: 24px;
         line-height: 40px;
         font-size: 16px;
     }
+
     header img {
         right: 8%;
     }
@@ -105,14 +112,17 @@ header button {
     header h1 {
         font-size: 26px;
     }
+
     header h2 {
         font-size: 26px;
     }
+
     header button {
         margin-top: 40px;
         line-height: 50px;
         font-size: 20px;
     }
+
     header img {
         right: 9%;
     }
@@ -122,14 +132,17 @@ header button {
     header h1 {
         font-size: 32px;
     }
+
     header h2 {
         font-size: 32px;
     }
+
     header button {
         margin-top: 60px;
         line-height: 60px;
         font-size: 24px;
     }
+
     header img {
         right: 20%;
     }
@@ -141,11 +154,13 @@ header button {
         bottom: 0;
         right: 5%;
     }
+
     header div.welcome {
         top: 15%;
         left: 7%;
         right: 48%;
     }
+
     header button {
         margin-top: 40px;
     }
@@ -155,9 +170,11 @@ header button {
     header h1 {
         font-size: 24px;
     }
+
     header h2 {
         font-size: 24px;
     }
+
     header button {
         font-size: 16px;
         line-height: 40px;
@@ -168,24 +185,30 @@ header button {
     header div.welcome {
         left: 3%;
     }
+
     header {
         background: linear-gradient(240deg, rgb(68, 68, 68) 40%, #00CC9A 40%);
     }
+
     header p {
         font-size: 56px;
     }
+
     header h1 {
         margin-top: 40px;
         font-size: 34px;
     }
+
     header h2 {
         font-size: 34px;
     }
+
     header button {
         margin-top: 80px;
         font-size: 28px;
         line-height: 70px;
     }
+
     header img {
         right: 0;
         height: 85%;
@@ -197,13 +220,16 @@ header button {
         text-align: left;
         left: 6%;
     }
+
     header h1 {
         margin-top: 40px;
         font-size: 50px;
     }
+
     header h2 {
         font-size: 50px;
     }
+
     header button {
         margin-top: 100px;
         font-size: 30px;
@@ -211,10 +237,12 @@ header button {
         padding: 0 40px;
         border-width: 2px;
     }
+
     header button .ico {
         font-size: 35px;
         padding: 25px 0 0 15px;
     }
+
     header img {
         right: 0;
         height: 80%;
@@ -223,23 +251,29 @@ header button {
 
 @media (orientation: landscape) and (min-width: 1600px) {
     header {
+        position: relative;
         background: linear-gradient(240deg, rgb(68, 68, 68) 45%, #00CC9A 45%);
     }
+
     header div.welcome {
         left: 8%;
     }
+
     header h1 {
         margin-top: 50px;
         font-size: 6rem;
         letter-spacing: 5px;
     }
+
     header h2 {
         font-size: 5rem;
         letter-spacing: 3px;
     }
+
     header button {
         line-height: 90px;
     }
+
     header img {
         right: 5%;
         height: 90%;
@@ -251,31 +285,43 @@ header button {
         cursor: pointer;
         transition: .3s;
     }
+
     header button:hover {
         background-color: #fff;
         color: #00CC9A;
         font-weight: 500;
     }
+
     header h1 {
         font-size: 5rem;
         text-shadow: 1px 1px 1px black;
     }
+
     header h2 {
         font-size: 4rem;
         text-shadow: 1px 1px 1px gray;
     }
+
     header img {
         height: 75vh;
         right: 2%;
     }
+
     header button {
         font-size: 3rem;
-        padding: 10px 20px;
+    }
+
+    header button .ico {
+        animation: grow 1s linear infinite;
+    }
+
+    header button p {
+        font-size: 2rem;
+        font-weight: 500;
     }
 }
 
 /* Sekcja 1 nasze cechy*/
-
 .features {
     max-width: 1600px;
     margin: 50px auto 0;
@@ -313,9 +359,11 @@ header button {
     .features h1 {
         font-size: 28px;
     }
+
     .features h2 {
         font-size: 24px;
     }
+
     .features p {
         font-size: 14px;
     }
@@ -325,9 +373,11 @@ header button {
     .features h1 {
         font-size: 36px;
     }
+
     .features h2 {
         font-size: 28px;
     }
+
     .features p {
         font-size: 18px;
     }
@@ -337,30 +387,37 @@ header button {
     header h1 {
         font-size: 4rem;
     }
+
     header h2 {
         font-size: 3rem;
     }
+
     header button {
         font-size: 2rem;
         padding: 10px 20px;
         ;
     }
+
     .features {
         margin-top: 50px;
         padding: 5% 2%;
         text-align: center;
     }
+
     .feature {
         float: left;
         width: 33%;
         padding: 20px;
     }
+
     .features h1 {
         font-size: 36px;
     }
+
     .features h2 {
         font-size: 22px;
     }
+
     .features p {
         font-size: 16px;
         line-height: 120%;
@@ -372,9 +429,11 @@ header button {
     header h1 {
         font-size: 5rem;
     }
+
     header h2 {
         font-size: 4rem;
     }
+
     header img {
         height: 80vh;
     }
@@ -384,30 +443,36 @@ header button {
     .features {
         padding: 20px 50px;
     }
+
     .features h1 {
         font-size: 60px;
     }
+
     .features h2 {
         font-size: 32px;
     }
+
     .features p {
         font-size: 21px;
         line-height: 140%;
         padding: 0 10px;
     }
+
     header h1 {
         font-size: 6rem;
     }
+
     header h2 {
         font-size: 5rem;
     }
+
     header img {
         height: 80vh;
     }
+
     header button {
         font-size: 3rem;
         padding: 10px 20px;
-        ;
     }
 }
 
@@ -468,37 +533,46 @@ header button {
     .portfolio h1 {
         font-size: 40px;
     }
+
     .portfolio .about h2 {
         font-size: 28px;
         text-indent: 40px;
     }
+
     .portfolio .about p {
         font-size: 18px;
         padding-left: 40px;
     }
+
     .portfolio .project {
         margin-bottom: 40px;
     }
 }
 
 @media (orientation: landscape) {
+
     .web,
     .about {
         width: 50%;
         float: left;
     }
+
     .web img {
         display: block;
     }
+
     .portfolio .project:nth-of-type(even) .web {
         float: right;
     }
+
     .portfolio .project:nth-of-type(even) .about {
         padding-right: 0;
     }
+
     .portfolio .project:nth-of-type(even) .about p {
         padding-right: 20px;
     }
+
     .portfolio .project:nth-of-type(even) .about h2 {
         text-indent: 0;
         margin-left: 40px;
@@ -510,24 +584,26 @@ header button {
         font-size: 60px;
         padding: 30px 0;
     }
+
     .portfolio .about h2 {
         padding-top: 50px;
         font-size: 28px;
         text-indent: 40px;
         margin-bottom: 50px;
     }
+
     .portfolio .about p {
         font-size: 18px;
         padding-left: 40px;
         line-height: 180%;
     }
+
     .portfolio .project {
         margin-bottom: 40px;
     }
 }
 
 /* Sekcja Slogan*/
-
 .slogan {
     text-align: center;
     background-image: url(../images/motto.jpg);
@@ -567,15 +643,18 @@ header button {
     .slogan .bg {
         padding: 50px 10px;
     }
+
     .slogan h1 {
         font-size: 48px;
         margin-bottom: 35px;
     }
+
     .slogan p {
         font-size: 26px;
         width: 60%;
         margin: 0 auto;
     }
+
     .slogan p.author {
         margin-top: 40px;
         font-size: 18px;
@@ -586,14 +665,17 @@ header button {
     .slogan .bg {
         padding: 80px 10px;
     }
+
     .slogan h1 {
         font-size: 60px;
         margin-bottom: 55px;
     }
+
     .slogan p {
         font-size: 40px;
         width: 50%;
     }
+
     .slogan p.author {
         margin-top: 40px;
         font-size: 26px;
@@ -601,7 +683,6 @@ header button {
 }
 
 /* Sekcja hobby*/
-
 .hobby {
     max-width: 1920px;
     margin: 0 auto;
@@ -665,6 +746,7 @@ header button {
         margin-top: 40px;
         margin-bottom: 35px;
     }
+
     .hobby .item p {
         font-size: 30px;
         padding: 15px 0;
@@ -679,13 +761,16 @@ header button {
         transition: 1s;
         cursor: default;
     }
+
     .hobby .item:hover p {
         opacity: 1;
     }
+
     .hobby .item {
         background-size: 100%;
         transition: 1s;
     }
+
     .hobby .item:hover {
         background-size: 130%;
     }
@@ -697,9 +782,11 @@ header button {
         margin-top: 50px;
         margin-bottom: 45px;
     }
+
     .hobby .item p {
         font-size: 40px;
     }
+
     header img {
         right: 5%;
         height: 90%;
@@ -707,7 +794,6 @@ header button {
 }
 
 /* sekcja contact */
-
 .contact {
     background-color: #00CC9A;
     padding: 30px 20px;
@@ -766,40 +852,48 @@ header button {
         font-size: 60px;
         padding: 30px 0;
     }
+
     .contact form {
         margin: 0 auto;
         max-width: 1024px;
         padding: 0 0 0 20px;
     }
+
     .contact .social {
         display: block;
         width: 50%;
         margin: 0 auto;
         padding: 0 50px;
     }
+
     .contact input,
     .contact button,
     .contact textarea {
         margin-bottom: 35px;
     }
+
     .contact input {
         height: 46px;
         font-size: 24px;
     }
+
     .contact textarea {
         height: 180px;
         font-size: 24px;
     }
+
     .contact button {
         font-size: 20px;
         line-height: 50px;
         transition: .3s;
         cursor: pointer;
     }
+
     .contact button span {
         font-size: 3rem;
         padding-left: 20px;
     }
+
     .contact button:hover {
         color: #00CC9A;
         font-weight: 500;
@@ -816,4 +910,16 @@ footer {
     font-size: 20px;
 }
 
-/**/
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
