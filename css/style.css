@@ -910,6 +910,7 @@ footer {
     font-size: 20px;
 }
 
+/* arrow animation header */
 @keyframes grow {
     0% {
         transform: scale(1);
