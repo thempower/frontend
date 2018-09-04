@@ -425,12 +425,12 @@ header button p {
     header .topmenu ul a i {
         color: white;
         font-size: 3rem;
+        transition: .3s;
     }
 
     header .topmenu ul li a:hover i {
         color: #00CC9A;
-        transition: 1s;
-        transform: scale(1.1);
+        font-size: 3.3rem;
     }
 
     header .topmenu p {
@@ -538,6 +538,7 @@ header button p {
 .portfolio {
     background-color: #00CC9A;
     padding: 10px 0 30px;
+    text-align: center;
 }
 
 .portfolio h1 {
@@ -548,6 +549,32 @@ header button p {
     padding: 10px 10px;
     margin-bottom: 15px;
     color: white;
+}
+
+.portfolio h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    margin: 30px 0 70px 0;
+}
+
+.portfolio h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 2px;
+    background-color: #00CC9A;
+    border-left: 3px solid white;
+    animation: cursor .6s infinite,
+        typing 4s steps(14, start) infinite;
 }
 
 .portfolio .web img {
@@ -593,6 +620,11 @@ header button p {
         font-size: 40px;
     }
 
+    .portfolio h2 {
+        font-size: 3rem;
+        margin-bottom: 100px;
+    }
+
     .portfolio .about h2 {
         font-size: 28px;
         text-indent: 40px;
@@ -605,6 +637,27 @@ header button p {
 
     .portfolio .project {
         margin-bottom: 40px;
+    }
+}
+
+@media (min-width:1024px) {
+    .portfolio h2 {
+        font-size: 4rem;
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width:1280px) {
+    .portfolio h2 {
+        font-size: 4rem;
+        margin-bottom: 150px;
+    }
+}
+
+@media (min-width:1600px) {
+    .portfolio h2 {
+        font-size: 5rem;
+        margin-bottom: 150px;
     }
 }
 
@@ -984,6 +1037,7 @@ footer {
     }
 }
 
+/* topbar show with delay*/
 @keyframes show {
     0% {
         opacity: 0;
@@ -991,5 +1045,34 @@ footer {
 
     100% {
         opacity: 1;
+    }
+}
+
+/* coming soon with dots */
+@keyframes typing {
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-color: transparent;
+    }
+
+    10% {
+        border-color: transparent;
+    }
+
+    25% {
+        border-color: white;
+    }
+
+    75% {
+        border-color: white;
+    }
+
+    100% {
+        border-color: transparent;
     }
 }
