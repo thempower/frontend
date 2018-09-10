@@ -9,6 +9,8 @@
     <meta name="keywords" content="front end, webdesing, webdevelopment,websites, responsive,seo, krzysztof staszewski">
     <meta name="descriptio" content="Trying to became a front end developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
     <!-- roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&amp;subset=latin-ext" rel="stylesheet">
@@ -17,6 +19,7 @@
         crossorigin="anonymous">
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -150,9 +153,9 @@
         <h1>Contact</h1>
         <div class="wrap clearfix">
             <form>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
                 <button>Send Message<span><i class="fas fa-paper-plane"></i></span></button>
             </form>
 
@@ -162,9 +165,14 @@
 
     <footer>
         <p>&copy;Krzysztof Staszewski 2018 all right reserved</p>
-    </footer>
 
+        <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+
+
 </body>
 
 </html>
